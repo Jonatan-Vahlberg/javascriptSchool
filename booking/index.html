@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!--<script src="main.js"></script>-->
+</head>
+<body>
+    <header class="red">
+        <h1>Header</h1>
+    </header>
+    <nav><p>Contact     home    About us</p> </nav>
+    <article>
+        <h2>Article</h2>
+        <section class="red">
+            <h3>Section</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis, totam necessitatibus modi a voluptatibus perspiciatis mollitia? Dicta voluptatum impedit eius at, atque ea voluptatibus, iure sed inventore repellat fugiat!</p>
+             <video loop height="400">
+            <source src = "./swim.mp4" type="video/mp4">
+            Your browser does not suport this video;
+        </video>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eligendi nesciunt corrupti et accusantium commodi minus voluptas, porro minima nemo quas quam, officiis ducimus tenetur a in at hic nihil.
+        Dolorum incidunt ex inventore perspiciatis ab laborum quisquam adipisci ipsam. Officiis deleniti temporibus nihil rerum accusamus enim, reiciendis quae incidunt necessitatibus ab aperiam illum fugit eum nesciunt cumque modi repellendus?
+        Necessitatibus, mollitia? Recusandae nostrum totam autem. Saepe accusamus illo eius odio quasi id est delectus. Hic eum reiciendis voluptatem atque, dolore ipsa, dolorem quidem iure necessitatibus reprehenderit aliquid voluptatibus nemo.
+        Libero sunt culpa aperiam autem a, ut eligendi possimus minus obcaecati veritatis sint velit, totam quisquam non iusto error modi deserunt, ea odio consequatur! Ratione incidunt tempora distinctio reprehenderit nisi!</p>
+        </section>
+        <section class="white">
+            <h2>Price</h2>
+            <div class="tot">
+          
+            </div>
+            <h2>Total:</h2>
+        </section>
+    </article>
+    <aside class="red">
+        <h4>Aside</h4>
+        <form action="https://primat.se/services/sendform.aspx?recipient=taloyibem@patonce.com" method="POST">
+            <input type="text" name="First name" placeholder="Firstname" required><br/>
+            <input type="text" name="Last name" placeholder="Lastname"><br/>
+            <input type="text" name="Adress" placeholder="Adress"><br/>
+            <input type="email" name="name" placeholder="Email"><br/>
+            <input type="tel" name="Phone Nr" placeholder="Phone Nr"><br/>
+            <label for="arriving" id="arr">Arriving</label><label for="leaving" id="leave">Leaving</label><br/>
+            <input type="date" name="arriving" id="arr" value="25-10-2018">
+            <input type="date" name="leaving" id="leave"><br/>
+            <label for="Persons Staying">Persons Staying</label><br/>
+            <input type="range" id="range" name="Persons Staying" min="1" max="8"><label id="peeps"></label><br/>
+            <h3>Lodging</h3>
+            <label for="gold">Gold</label> <label for="silver">Silver</label> <label for="bronze">Bronze</label><br/>
+            <input type="radio" name="pack" id="gold">
+            <input type="radio" name="pack" id="silver">
+            <input type="radio" name="pack" id="bronze"><br/>
+            <label for="all">All inclusive</label><br>
+            <input type="checkbox" name="all" id="all"><br/>
+            <label>Balcony </label><label>Roomservice </label><label>Car</label> <br>
+            <input type="checkbox" name="extra" id="bal">
+            <input type="checkbox" name="extra" id="room">
+            <input type="checkbox" name="extra"id="car"><br/>
+            <label>Breakfast </label><label>Lunch </label><label>Dinner</label> <br>
+            <input type="checkbox" name="extra" id="break">
+            <input type="checkbox" name="extra" id="lunch">
+            <input type="checkbox" name="extra" id="dinner"><br/>
+
+            <label for="select">Card provider</label><br/>            
+            <img id="icon" alt="Icon" src="./img/information.png">
+            <select class="opt">
+                <option >Choose</option>
+                <option  value="MasterCard">MasterCard</option>
+                <option  value="Visa">Visa</option>
+                <option  value="American Express">American Express</option>
+            </select><br/>
+            <input type="text" name="Cardnr"placeholder="Cardnr"><br/>
+            <input type="number" placeholder="CVC" min="100" max="999"> <br>
+            <button>SEND</button>
+        </form>
+        
+       
+    </aside>
+    <footer class="red">
+        <h3>Footer</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
