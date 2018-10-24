@@ -4,9 +4,37 @@ var rooms =  document.getElementsByName('pack'); //radio
 var all = document.getElementById('all'); // checkbox
 var extra = document.getElementsByName('extra'); //checkboxes
 var cardtype = document.querySelectorAll('.opt');
-var lDate = document.getElementById('leave');
 
-document.getElementById("arr").valueAsDate = new Date();
+var d = new Date();
+var string = d.getFullYear()+'-'+ (d.getMonth()+1)+'-'+ d.getDate();
+document.getElementById("arr").value = string;
+var string = d.getFullYear()+'-'+ (d.getMonth()+1)+'-'+ (d.getDate()+3);
+document.getElementById("leave").value = string;
+
+var video = document.getElementById('vid');
+var vidId = 0;
+
+function changeSource(){
+    if(vidId == 0){
+        vidId = 1;
+        this.src = './hotel.mp4';
+        this.load();
+        this.play();
+        
+    }else if(vidId == 1){
+        this.src = './sushi.mp4';
+        this.load();
+        this.play();
+        vidId = 2;
+    }else if(vidId == 2){
+        this.src = './swim.mp4';
+        this.load();
+        this.play();
+        vidId = 0;
+    }
+}
+
+
 var priceMess = `<p>`;
 function groupSize(){
     console.log(this.value);
@@ -167,4 +195,7 @@ rooms.forEach(room => room.addEventListener('click',roomType));
 all.addEventListener('click',allInclusive);
 extra.forEach(ex => ex.addEventListener('click',extras));
 cardtype.forEach( card => card.addEventListener('click',cardImg));
+
+video.addEventListener('ended',changeSource);
+
 priceCalc();
